@@ -5,7 +5,7 @@
 
 ## 収録内容
 
-`japanese-technical-business-writing`は、文章の正確さ、情報の順序、文の構造、専門用語、文体を制御するSkillです。
+`japanese-technical-business-writing`は、文章の正確さ、情報の順序、段落、文の構造、専門用語、文体を制御するSkillです。
 `register-writing-rule`は、文章への修正指摘を分析し、再利用できる指摘だけをSkill、用語辞書、Lintへ反映するSkillです。
 
 ```text
@@ -24,6 +24,13 @@ skills/
 └─ register-writing-rule/
    ├─ SKILL.md
    └─ agents/openai.yaml
+test/
+├─ corpus/
+│  ├─ natural/
+│  └─ unnatural/
+├─ config.test.mjs
+├─ corpus.test.mjs
+└─ lint-writing.test.mjs
 ```
 
 ## セットアップ
@@ -49,12 +56,14 @@ Markdownまたはテキストファイルを指定します。
 npm run lint:writing -- docs/design.md
 ```
 
-strict Lintは、修正が必要な問題を検出すると終了コードを失敗にします。
+strict Lintは、文体の混在、正式表記の誤り、一文が複数行にまたがる問題、一行に複数の文がある問題、太字などを検出すると終了コードを失敗にします。
 review Lintは改善候補を表示しますが、候補が存在するだけでは終了コードを失敗にしません。
+算用数字と漢数字の使い分けは文書ごとの表記規約に関わるため、review Lintで確認します。
 
 ## テスト
 
-独自Lint、用語辞書、実行スクリプトの連携を確認します。
+独自Lint、Lint設定、用語辞書、実行スクリプトの連携を確認します。
+技術書、仕様書、手順書、ビジネス報告書の正常文コーパスも検査し、strict Lintが自然な文章を誤検知しないことを確認します。
 
 ```bash
 npm test

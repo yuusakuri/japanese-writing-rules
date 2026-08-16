@@ -7,7 +7,7 @@
       "max-comma": false,
       "max-ten": false,
       "max-kanji-continuous-len": false,
-      "arabic-kanji-numbers": false,
+      "arabic-kanji-numbers": true,
       "no-mix-dearu-desumasu": false,
       "ja-no-mixed-period": false,
       "no-double-negative-ja": false,
@@ -31,11 +31,11 @@
     },
     "@textlint-ja/preset-ai-writing": {
       "no-ai-list-formatting": {
-        "disableBoldListItems": false,
+        "disableBoldListItems": true,
         "disableEmojiListItems": false
       },
       "no-ai-hype-expressions": true,
-      "no-ai-emphasis-patterns": true,
+      "no-ai-emphasis-patterns": false,
       "no-ai-colon-continuation": true,
       "ai-tech-writing-guideline": {
         "severity": "info",

@@ -5,10 +5,10 @@
       "max-comma": false,
       "max-ten": false,
       "max-kanji-continuous-len": false,
-      "arabic-kanji-numbers": true,
+      "arabic-kanji-numbers": false,
       "no-mix-dearu-desumasu": {
         "preferInHeader": "",
-        "preferInBody": "ですます",
+        "preferInBody": "",
         "preferInList": "",
         "strict": false
       },
