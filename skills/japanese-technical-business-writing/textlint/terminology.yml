@@ -1,0 +1,46 @@
+version: 1
+
+rules:
+  - expected: Web
+    patterns:
+      - ウェブ
+    specs:
+      - from: ウェブ
+        to: Web
+
+  - expected: Webサイト
+    patterns:
+      - ウェブサイト
+    specs:
+      - from: ウェブサイト
+        to: Webサイト
+
+  - expected: GitHub
+    patterns:
+      - Github
+      - github
+    specs:
+      - from: Github
+        to: GitHub
+
+  - expected: JavaScript
+    patterns:
+      - Javascript
+    specs:
+      - from: Javascript
+        to: JavaScript
+
+  - expected: TypeScript
+    patterns:
+      - Typescript
+    specs:
+      - from: Typescript
+        to: TypeScript
+
+  - expected: PowerShell
+    patterns:
+      - Powershell
+      - Power Shell
+    specs:
+      - from: Powershell
+        to: PowerShell

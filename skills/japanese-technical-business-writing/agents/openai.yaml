@@ -1,0 +1,4 @@
+interface:
+  display_name: "日本語技術・ビジネス文書"
+  short_description: "自然で正確な日本語の技術文書とビジネス文書を作成・編集します"
+  default_prompt: "$japanese-technical-business-writing を使って、この文書を自然で正確な日本語に整えてください。"
