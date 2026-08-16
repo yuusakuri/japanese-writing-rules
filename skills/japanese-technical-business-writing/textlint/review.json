@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 100
+      },
+      "max-comma": false,
+      "max-ten": false,
+      "max-kanji-continuous-len": false,
+      "arabic-kanji-numbers": false,
+      "no-mix-dearu-desumasu": false,
+      "ja-no-mixed-period": false,
+      "no-double-negative-ja": false,
+      "no-dropping-the-ra": false,
+      "no-doubled-conjunctive-particle-ga": true,
+      "no-doubled-conjunction": true,
+      "no-doubled-joshi": {
+        "min_interval": 1
+      },
+      "no-nfd": false,
+      "no-invalid-control-character": false,
+      "no-zero-width-spaces": false,
+      "no-exclamation-question-mark": false,
+      "no-hankaku-kana": false,
+      "ja-no-weak-phrase": false,
+      "ja-no-successive-word": false,
+      "ja-no-abusage": false,
+      "ja-no-redundant-expression": false,
+      "ja-unnatural-alphabet": false,
+      "no-unmatched-pair": false
+    },
+    "@textlint-ja/preset-ai-writing": {
+      "no-ai-list-formatting": {
+        "disableBoldListItems": false,
+        "disableEmojiListItems": false
+      },
+      "no-ai-hype-expressions": true,
+      "no-ai-emphasis-patterns": true,
+      "no-ai-colon-continuation": true,
+      "ai-tech-writing-guideline": {
+        "severity": "info",
+        "disableRedundancyGuidance": false,
+        "disableVoiceGuidance": true,
+        "disableClarityGuidance": false,
+        "disableConsistencyGuidance": false,
+        "disableStructureGuidance": false,
+        "enableDocumentAnalysis": true
+      }
+    }
+  }
+}
